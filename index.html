@@ -37,17 +37,19 @@
 
             <!--PRIMERAFILA-->
             <div class="form-row p-3 m-2">
+                <!--CARDNUMBER-->
                 <div class="form-group col-md-6">
                     <label for="numberCard" class="font-weight-bold">Card #</label>
                     <input class="form-control" type="number" name="cardNumber" id="cardNumber"
                         placeholder="XXXXXXXXXXXXXXXXX" required>
                 </div>
+                <!--CVCNUMBER-->
                 <div class="form-group col-md-2">
                     <label for="cvcNumber" class="font-weight-bold">CVC #</label>
                     <input class="form-control" type="number" name="cvcNumber" id="cvcNumber" placeholder="0000"
                         required>
-
                 </div>
+                <!--AMOUNT-->
                 <div class="form-group col-md-4">
                     <label for="amount" class="font-weight-bold">Amount</label>
                     <div class="d-flex">
@@ -57,21 +59,29 @@
                     </div>
                 </div>
             </div>
+
+            <!--SEGUNDAFILA-->
             <div class="form-row p-3 m-2">
+                <!--FIRSTNAME-->
                 <div class="form-group col-md-6">
                     <label for="firstName" class="font-weight-bold">First Name</label>
                     <input class="form-control" type="text" name="firstName" id="firstName" required>
                 </div>
+                <!--LASTNAME-->
                 <div class="form-group col-md-6">
                     <label for="lastName" class="font-weight-bold">Last Name</label>
                     <input class="form-control" type="text" name="lastName" id="lastName" required>
                 </div>
             </div>
+
+            <!--TERCERAFILA-->
             <div class="form-row p-3 m-2">
+                <!--CITY-->
                 <div class="form-group col-md-8">
                     <label for="city" class="font-weight-bold">City</label>
                     <input class="form-control" type="text" name="city" id="city" required>
                 </div>
+                <!--STATE-->
                 <div class="form-group col-md-2">
                     <label for="state" class="font-weight-bold">State</label>
                     <select class="form-control" name="state" id="state" required>
@@ -85,15 +95,16 @@
                         <option value="cartago">Cartago</option>
                     </select>
                 </div>
+                <!--POSTALCODE-->
                 <div class="form-group col-md-2">
                     <label for="postalCode" class="font-weight-bold">Postal Code</label>
                     <input class="form-control" type="number" name="postalCode" id="postalCode" required>
                 </div>
             </div>
 
+            <!--CUARTAFILA-->
             <div class="form-row m-2 p-3 justify-content-between">
-
-
+                <!--PAYMENTMETHOD-->
                 <div class="col-md-3 text-white ">
                     <legend class="col-form-label mb-3 text-dark font-weight-bold">We accept:</legend>
 
@@ -123,64 +134,24 @@
                             <label class="form-check-label" for="inlineRadio3"><i
                                     class="fa-brands fa-cc-amex btn-lg"></i></label>
                         </div>
-
                     </div>
-
                 </div>
+                <!--MESSAGE-->
                 <div class="form-group col-md-6">
                     <label for="message" class="font-weight-bold">Message</label>
                     <textarea class="form-control" name="message" id="message" cols="30" rows="5" required></textarea>
                     <label class="text-secondary">Add any note here.</label>
                 </div>
-
             </div>
-            <!--
 
-              <div class="form-row m-2 p-3 justify-content-between">
-                  <div class="form-check col-md-4 text-white">
-                      <legend class="col-form-label mb-3 text-dark font-weight-bold">We accept:</legend>
-                      <div class="bg-secondary py-3 pl-1 w-50 rounded-lg">
-                          
-                          <input class="form-check-input ml-2" type="radio" name="gridRadios" id="gridMasterCard"
-                          value="option1" checked>
-                          <label class="form-check-label mx-4" for="gridMasterCard"><i
-                            class="fa-brands fa-cc-mastercard"></i></label>
-                            
-                            <input class="form-check-input ml-2" type="radio" name="gridRadios" id="gridVisa"
-                            value="option1">
-                            <label class="form-check-label mx-4" for="gridVisa"><i class="fa-brands fa-cc-visa"></i></label>
-                            
-                            <input class="form-check-input ml-2" type="radio" name="gridRadios" id="gridDinersClub"
-                            value="option1">
-                            <label class="form-check-label mx-4" for="gridDinersClub"><i
-                                class="fa-brands fa-cc-diners-club"></i></label>
-                                
-                                <input class="form-check-input ml-2" type="radio" name="gridRadios" id="gridAmex"
-                                value="option1">
-                                <label class="form-check-label mx-4" for="gridAmex"><i class="fa-brands fa-cc-amex"></i></label>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group col-md-6">
-                            <label for="message" class="font-weight-bold">Message</label>
-                            <textarea class="form-control" name="message" id="message" cols="30" rows="5" required></textarea>
-                            <label class="text-secondary">Add any note here.</label>
-                        </div>
-                    </div>
-                -->
-
-
+            <!--FOOTERBOTONES-->
             <div class="form-group col-md-12 d-flex flex-row-reverse bg-light border p-3 ">
                 <button id="send" class="btn-primary rounded-lg btn-lg border-0" type="submit">Send</button>
                 <button class="btn-secondary mr-3 rounded-lg btn-lg border-0 ">Cancel</button>
             </div>
-
         </form>
     </div>
 
-    <script>
-        scr = "http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -205,58 +176,6 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 
-
-    <!--
-
-         <script>
-             $(document).ready(function(){
-                 $("#validationAlert").hide();
-                 $("#form1").submit(function(e){
-                     e.preventDefault();
-                     cardNumber = $.trim($("#cardNumber").val());
-                     cvcNumber = $.trim($("#cvcNumber").val());
-                     amount = $.trim($("#amount").val());
-                     firstName = $.trim($("#firstName").val());
-                     lastName = $.trim($("#lastName").val());
-                city = $.trim($("#city").val());
-                state = $.trim($("#state").val());
-                postalCode = $.trim($("#postalCode").val());
-                message = $.trim($("#message").val());
-                
-                if (cardNumber.length < 0 || cvcNumber.length < 0 ||amount.length<0||firstName.length<0||lastName.length<0||city.length<0||state.length<0||postalCode.length<0||message.length<0) {
-                    
-                    $("#validationAlert").fadeTo(2000, 500).slideUp(500, function(){
-                        $("#validationAlert").slideUp(500)
-                    });
-                }
-            });
-        });
-    -->
-    </script>
-    <script>
-        $(document).ready(function () {
-            //$("#validationAlert").hide();
-            $("#send").click(function () {
-
-                cardNumber = $.trim($("#cardNumber").val());
-                cvcNumber = $.trim($("#cvcNumber").val());
-                amount = $.trim($("#amount").val());
-                firstName = $.trim($("#firstName").val());
-                lastName = $.trim($("#lastName").val());
-                city = $.trim($("#city").val());
-                state = $.trim($("#state").val());
-                postalCode = $.trim($("#postalCode").val());
-                message = $.trim($("#message").val());
-
-                if (cardNumber.length < 0 || cvcNumber.length < 0 || amount.length < 0 || firstName.length < 0 || lastName.length < 0 || city.length < 0 || state.length < 0 || postalCode.length < 0 || message.length < 0) {
-
-                    $("#validationAlert").fadeTo(2000, 500).slideUp(500, function () {
-                        $("#validationAlert").slideUp(5000)
-                    });
-                }
-            })
-        });
-    </script>
 </body>
 
 </html>
